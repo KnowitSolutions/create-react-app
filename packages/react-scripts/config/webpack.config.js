@@ -333,6 +333,11 @@ module.exports = function(webpackEnv) {
           include: paths.appSrc,
         },
         {
+          test: /\.(js|js\.map|map)$/,
+          enforce: 'pre',
+          loader: require.resolve('source-map-loader'),
+        },
+        {
           // "oneOf" will traverse all following loaders until one will
           // match the requirements. When no loader matches it will fall
           // back to the "file" loader at the end of the loader list.
@@ -434,7 +439,7 @@ module.exports = function(webpackEnv) {
                 // because it was compiled. Thus, we don't want the browser
                 // debugger to show the original code. Instead, the code
                 // being evaluated would be much more helpful.
-                sourceMaps: false,
+                // sourceMaps: false,
               },
             },
             // "postcss" loader applies autoprefixer to our CSS.
