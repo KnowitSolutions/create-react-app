@@ -64,6 +64,7 @@
     "react-dev-utils": "^7.0.1",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
+    "source-map-loader": "^0.2.4",
     "style-loader": "0.23.0",
     "terser-webpack-plugin": "1.1.0",
     "url-loader": "1.1.1",
