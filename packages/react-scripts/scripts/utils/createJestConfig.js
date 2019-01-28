@@ -77,7 +77,9 @@ module.exports = (resolve, rootDir, isEjecting) => {
     'resetMocks',
     'resetModules',
     'snapshotSerializers',
-    'watchPathIgnorePatterns',
+		'watchPathIgnorePatterns',
+		'setupTestFrameworkScriptFile',
+		'testMatch'
   ];
   if (overrides) {
     supportedKeys.forEach(key => {
