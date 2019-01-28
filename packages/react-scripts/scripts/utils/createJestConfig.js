@@ -85,6 +85,8 @@ module.exports = (resolve, rootDir, isEjecting) => {
     'transform',
     'transformIgnorePatterns',
     'watchPathIgnorePatterns',
+		'setupTestFrameworkScriptFile',
+		'testMatch'
   ];
   if (overrides) {
     supportedKeys.forEach(key => {
