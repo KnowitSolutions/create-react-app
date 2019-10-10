@@ -24,15 +24,13 @@ The setup of this fork has been modeled after another react-scripts fork: [backp
 1. To publish a new version of `@knowitsolutions/react-scripts`, run the following command:
 
    ```
-   npm run publish -- --scope @knowitsolutions/react-scripts
+   npm run publish prerelease
    ```
-
-1. You will be prompted to select a new semver version (MAJOR, MINOR, PATCH). Use the [CHANGELOG.md](./CHANGELOG.md) to decide on the nature of the changes since the last release.
 
    - If you want to be extra careful, you can publish a prerelease by running this instead:
 
    ```
-   npm run publish -- --scope @knowitsolutions/react-scripts --canary
+   npm run publish --canary
    ```
 
 1. Update the [CHANGELOG.md](./CHANGELOG.md) with the new version, taking care to follow the format of previous releases.
