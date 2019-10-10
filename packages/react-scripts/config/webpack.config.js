@@ -390,6 +390,10 @@ module.exports = function(webpackEnv) {
         },
         {
           test: /\.(js|js\.map|map)$/,
+          ignore: [
+            // Known packages with bad source-map reference
+            /react-double-scrollbar/,
+          ],
           enforce: 'pre',
           loader: require.resolve('source-map-loader'),
         },
